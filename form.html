@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sample</title>
+</head>
+<body>
+   <form action="https://formspree.io/your@email.com"
+      method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br>
+        <lable> Email:
+        <input type="text" name="email" required>
+        </lable><br>
+        <label for="car-plate">Car plate number</label>
+        <input type="text" name="car-plate" id="car-plate"
+        pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+        title="AA2222CC"
+        placeholder="AA2222CC"
+        required><br>
+        <input type="submit" value="SEND">
+    </form>
+    
+</body>
+</html>
